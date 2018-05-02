@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuoteViewController" customModule="VIPER_ProtocolNetworkManager" customModuleProvider="target">
+            <connections>
+                <outlet property="autherLabel" destination="FXX-7f-mnT" id="sfY-oT-2tl"/>
+                <outlet property="quoteLabel" destination="EXp-0a-X9H" id="nS0-on-nmn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXp-0a-X9H">
+                    <rect key="frame" x="5" y="53" width="365" height="26.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" red="0.91291721199999998" green="0.36009680179999998" blue="0.066690269809999994" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXX-7f-mnT">
+                    <rect key="frame" x="320" y="93" width="50" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EXp-0a-X9H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="33" id="5Pd-B7-0i4"/>
+                <constraint firstItem="EXp-0a-X9H" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ELS-uo-zKv"/>
+                <constraint firstItem="EXp-0a-X9H" firstAttribute="trailing" secondItem="FXX-7f-mnT" secondAttribute="trailing" id="KEE-6t-fk6"/>
+                <constraint firstAttribute="trailing" secondItem="EXp-0a-X9H" secondAttribute="trailing" constant="5" id="NdK-ze-Ku7"/>
+                <constraint firstItem="EXp-0a-X9H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="otp-Yg-9RX"/>
+                <constraint firstItem="FXX-7f-mnT" firstAttribute="top" secondItem="EXp-0a-X9H" secondAttribute="bottom" constant="13.5" id="rML-Z1-36E"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+        </view>
+    </objects>
+</document>

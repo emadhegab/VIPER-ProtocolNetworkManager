@@ -1,0 +1,6 @@
+framework module Pods_VIPER_ProtocolNetworkManager {
+  umbrella header "Pods-VIPER+ProtocolNetworkManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
