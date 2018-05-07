@@ -7,11 +7,10 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 public enum Response {
 
-    case json(_: JSON)
+    case json(_: [String: Any]??)
     case data(_: Data)
     case error(_: Int?, _: Error?)
 
@@ -41,12 +40,8 @@ public enum Response {
         case .data:
             self = .data(data)
         case .json:
-            do {
-                self = try .json(JSON(data: data))
-            } catch {
-                print("\(error.localizedDescription)")
-                self = .error(500, error)
-            }
+            let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            self = .json(json)
         }
     }
 }

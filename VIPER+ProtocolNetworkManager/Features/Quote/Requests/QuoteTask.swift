@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SwiftyJSON
+
 
 class QuoteTask <T: Codable>: Operation {
 
@@ -20,7 +20,7 @@ class QuoteTask <T: Codable>: Operation {
         do {
             try dispatcher.execute(request: self.request, completion: { (response) in
                 switch response {
-                case .data(let data):
+                case .json(let data):
                     do {
                         let decoder = JSONDecoder()
 //                        decoder.keyDecodingStrategy = .convertFromSnakeCase

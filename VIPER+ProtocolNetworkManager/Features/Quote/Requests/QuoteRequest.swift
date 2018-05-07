@@ -19,8 +19,6 @@ enum QuoteRequest: Request {
         switch self {
         case .getRandomQuote:
             return .get
-        default:
-           return .post
         }
     }
     

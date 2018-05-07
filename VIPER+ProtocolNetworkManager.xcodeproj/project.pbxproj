@@ -235,6 +235,7 @@
 				A59495F0209A32170033A782 /* Frameworks */,
 				A59495F1209A32170033A782 /* Resources */,
 				5FA13CF2EBC1DE701A3386F1 /* [CP] Embed Pods Frameworks */,
+				643F9A0D9EE0B4BD67AF6D27 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,6 +358,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPER+ProtocolNetworkManager/Pods-VIPER+ProtocolNetworkManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		643F9A0D9EE0B4BD67AF6D27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPER+ProtocolNetworkManager/Pods-VIPER+ProtocolNetworkManager-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

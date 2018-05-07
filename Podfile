@@ -3,7 +3,6 @@
 
 target 'VIPER+ProtocolNetworkManager' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  pod 'SwiftyJSON'
   use_frameworks!
 
 end
